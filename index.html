@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <title>PP2</title>
+</head>
+<body>
+
+    <div class="text">Номер сотрудника:<br>Формат: 7 111 111-11-11</div>
+    <form class="form" action="">
+        <input class="input" type="tel" id="phone" name="phone"  required minlength="10" required maxlenght="11" required pattern="[7]{1}[0-9]{10}">
+        <button class="input__btn" id="input__btn">Отправить</button> 
+        </form>
+        
+<br>
+<div class="text">Имя сотрудника:<br>Формат: Имя Фамилия</div>
+<form class="form" action="">
+    <input class="input" type="text" id="name" name="name" required minlength="8" required maxlenght="18"  required pattern="^[А-Яа-яЁё\s]+$">
+    <button class="input__btn" id="input__btn">Отправить</button>
+    </form>
+      <br><br>
+    <button class="input__btn">Вывод информации обо всех сотрудниках</button>
+    <br>
+    <a class="link" href="#">Создание нового сотрудника</a>
+
+
+
+    <table id="myTable">
+        <thead>
+         <tr class="table">
+           <th class="table__name_id">Номер<br> сотрудника</th>
+            <th class="table__name">Имя сотрудника</th>
+            <th class="table__name">Должность<br> сотрудника</th>
+            <th class="table__name">Дата принятия<br> на работу</th>
+            <th class="table__name">Департамент</th>
+            <th class="table__name">Удаление</th>
+         </tr>
+        </thead>
+       <tbody>
+         <tr>
+           <td>1.</td>
+           <td>Артём Михалёв</td><td>Senior Developer</td><td>19.03.2019</td><td>MercDev</td><td><input type="button" value="Удалить" onclick="deleteRow(this)"></td>
+         </tr>
+         <tr>
+          <td>2.</td>
+          <td>Валерий Балабин</td><td>Lead Developer</td><td>21.04.2020</td><td>Haulmont</td><td><input type="button" value="Удалить" onclick="deleteRow(this)"></td>
+         </tr>
+         <tr>
+          <td>3.</td>
+          <td>Борис Колыхалкин</td><td>Senior Developer</td><td>05.06.2020</td><td>Yandex</td><td><input type="button" value="Удалить" onclick="deleteRow(this)"></td>
+         </tr>
+         <tr>
+          <td>4.</td>
+          <td>Максим Мусиев</td><td>Middle Developer</td><td>29.09.2021</td><td>Haulmont</td><td><input type="button" value="Удалить" onclick="deleteRow(this)"></td>
+         </tr>
+         <tr>
+          <td>5.</td>
+          <td>Александр Сащиков</td><td>SEO specialist</td><td>16.12.2018</td><td>Inventale</td><td><input type="button" value="Удалить" onclick="deleteRow(this)"></td>
+         </tr>
+         <tr>
+          <td>6.</td>
+          <td>Богдан Черный</td><td>Recuiter</td><td>15.01.2019</td><td>CreativeCo</td><td><input type="button" value="Удалить" onclick="deleteRow(this)"></td>
+         </tr>
+         <tr>
+          <td>7.</td>
+          <td>Никита Гундоров</td><td>CEO</td><td>11.11.2016</td><td>Sber.IT</td><td><input type="button" value="Удалить" onclick="deleteRow(this)"></td>
+         </tr>
+         <tr>
+          <td>8.</td>
+          <td>Олеся Котова</td><td>Junior Developer</td><td>20.02.2021</td><td>Magenta Tech.</td><td><input type="button" value="Удалить" onclick="deleteRow(this)"></td>
+         </tr>
+         <tr>
+          <td>9.</td>
+          <td>Дмитрий Киселёв</td><td>Middle Developer</td><td>08.11.2021</td><td>BellIntegrator</td><td><input type="button" value="Удалить" onclick="deleteRow(this)"></td>
+         </tr>
+         <tr>
+          <td>10.</td>
+          <td>Андрей Зазин</td><td>Junior Developer</td><td>07.08.2020</td><td>Q-lab</td><td><input type="button" value="Удалить" onclick="deleteRow(this)"></td>
+         </tr>
+       </tbody>  
+       </table>
+
+
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/ca62975fc8.js" crossorigin="anonymous"></script>
+</html>
